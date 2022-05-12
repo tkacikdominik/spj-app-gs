@@ -1,6 +1,7 @@
 {
   "name": "spj-app",
   "version": "0.1.0",
+  "homepage": "https://tkacikdominik.github.io/spj-app-gs",
   "private": true,
   "author": "Nikola Siplakova",
   "dependencies": {
@@ -9,6 +10,7 @@
     "@testing-library/user-event": "^13.5.0",
     "antlr4": "^4.9.3",
     "formik": "^2.2.9",
+    "gh-pages": "^4.0.0",
     "lodash": "^4.17.21",
     "react": "^17.0.2",
     "react-ace": "^10.0.0",
@@ -19,6 +21,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
++   "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
